@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "wt-lab4-4mvc-denisyuk/1.0.0": {
+        "runtime": {
+          "wt-lab4-4mvc-denisyuk.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "wt-lab4-4mvc-denisyuk/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
