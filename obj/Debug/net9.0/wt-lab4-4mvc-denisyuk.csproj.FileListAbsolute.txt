@@ -94,3 +94,4 @@ C:\Users\Hacker\wt-lab4-4mvc-denisyuk\obj\Debug\net9.0\refint\wt-lab4-4mvc-denis
 C:\Users\Hacker\wt-lab4-4mvc-denisyuk\obj\Debug\net9.0\wt-lab4-4mvc-denisyuk.pdb
 C:\Users\Hacker\wt-lab4-4mvc-denisyuk\obj\Debug\net9.0\wt-lab4-4mvc-denisyuk.genruntimeconfig.cache
 C:\Users\Hacker\wt-lab4-4mvc-denisyuk\obj\Debug\net9.0\ref\wt-lab4-4mvc-denisyuk.dll
+C:\Users\Hacker\wt-lab4-4mvc-denisyuk\obj\Debug\net9.0\wt-lab4-4mvc-denisyuk.sourcelink.json

@@ -26,6 +26,35 @@ public class BookController : Controller
         if (book == null) return NotFound(); // Если книги с таким ID нет, выдаст 404
         return View(book);
     }
+        // GET: /Book/Edit/1
+    public IActionResult Edit(int id)
+    {
+        var book = Books.FirstOrDefault(b => b.Id == id);
+        if (book == null) return NotFound();
+        return View(book);
+    }
+
+    // POST: /Book/Edit/1
+    [HttpPost]
+    public IActionResult Edit(int id, Book book)
+    {
+        if (id != book.Id) return NotFound();
+
+        if (ModelState.IsValid)
+        {
+            var existingBook = Books.FirstOrDefault(b => b.Id == id);
+            if (existingBook != null)
+            {
+                // Обновляем данные
+                existingBook.Title = book.Title;
+                existingBook.Author = book.Author;
+                existingBook.Year = book.Year;
+                existingBook.IsAvailable = book.IsAvailable;
+            }
+            return RedirectToAction(nameof(Index));
+        }
+        return View(book);
+    }
      // GET: /Book/Create
     public IActionResult Create()
     {
