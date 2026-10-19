@@ -55,6 +55,17 @@ public class BookController : Controller
         }
         return View(book);
     }
+       // POST: /Book/Delete/1
+    [HttpPost]
+    public IActionResult Delete(int id)
+    {
+        var book = Books.FirstOrDefault(b => b.Id == id);
+        if (book != null)
+        {
+            Books.Remove(book);
+        }
+        return RedirectToAction(nameof(Index));
+    }
      // GET: /Book/Create
     public IActionResult Create()
     {
